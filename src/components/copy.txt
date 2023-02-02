@@ -1,0 +1,52 @@
+import React from "react";
+import "./style.css"
+import React, { useState, useEffect } from 'react';
+
+
+
+
+const Home = () =>  {
+
+  const [location, setLocation] = useState({});
+
+}
+
+    const API = fetch('https://api.geoapify.com/v1/geocode/reverse?lat=${28.7670272}&lon=${77.0473984}&format=json&apiKey=9bcf1c957ac443e78852823ab61853d4')
+    .then(resp => resp.json())
+    .then((result) => {
+      if (result.length) {
+        console.log(result[0].timezone);
+      } else {
+        console.log("No location found");
+      }
+   
+
+  return (
+    <>
+  
+      <h1>
+        TimeZone API <br />
+        Your Current Time Zone
+      </h1>
+
+      <div className="first">
+        <p>Name Of Time Zone:</p><br />
+        <p>Long:  <span className="lat">Lat:</span></p> <br />
+        <p >Offset STD:</p><br />
+        <p >Offset STD Seconds:</p><br />
+        <p >Offset Dst:</p><br />
+        <p >Offset DST Seconds:</p><br />
+        <p>Country:</p><br />
+        <p>Post Code:</p><br />
+        <p>City:</p>
+      </div>
+      <div className="second">
+        <h1>Enter Address </h1>
+        <input  classname="search" type="text" placeholder="address" name="search" />
+        <button type="submit"> submit</button>
+      </div>
+    </>
+      )
+});
+
+export default Home;

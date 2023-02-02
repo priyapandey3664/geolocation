@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.first {
+  margin-top: 50px;
+}
+
+.lat {
+  margin-top: -15px;
+  margin-left: 250px;
+}
+
+h1 {
+  font: size 50px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1-heading{
+    font-size:38px;
+}
+.first p {
+  margin: auto;
+  width: 30%;
+}
+
+.second {
+  background: black;
+  color: white;
+}
+
+.second p {
+  margin: auto;
+  width: 30%;
+}
+
+.second button {
+  margin-top: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #e3e3e3;
+  /* border-right: none; */
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  /* color: #030303; */
+  background: #000;
+}
+
+.searchTerm:focus {
+  color: #070707;
+}
+
+.searchButton {
+  width: 120px;
+  height: 36px;
+  border: white;
+  background: white;
+  text-align: center;
+  color: rgb(8, 8, 8);
+ 
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cmt{
+   
+    font-weight: 900;
+
+}
+
+.wrap {
+   
+  margin: 0 0 0 450px;
+  width: 40%;
+ 
+}
